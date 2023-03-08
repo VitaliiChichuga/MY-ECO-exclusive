@@ -301,6 +301,9 @@ img {
   font-weight: 600;
   color: var(--title-color);
 }
+.collection__button-position {
+  margin-left: 40px;
+}
 
 /* =============footer============= */
 
