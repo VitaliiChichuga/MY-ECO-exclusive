@@ -290,6 +290,7 @@ img {
 }
 .collection__img {
   width: 370px;
+
   margin: 15px auto;
 }
 .collection__item-text {
@@ -386,6 +387,11 @@ img {
   display: block;
   width: 100%;
   text-align: center;
+}
+.shop-collection__img {
+  width: 370px;
+  height: 553px;
+  margin: 15px auto;
 }
 .button {
   padding: 40px 15px;
