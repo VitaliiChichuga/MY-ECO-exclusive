@@ -135,12 +135,7 @@ img {
   background-repeat: no-repeat;
   background-position: center;
 }
-.hero2 {
-  min-width: 1440px;
-  background-image: url(../images/44.jpg);
-  background-repeat: no-repeat;
-  background-position: center;
-}
+
 .hero__content {
   display: flex;
   padding-bottom: 127px;
