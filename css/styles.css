@@ -131,7 +131,15 @@ img {
 /* ================section hero=============  */
 .hero {
   min-width: 1440px;
-  background-image: url(../images/hero-background.jpg);
+  background-image: url(../images/33.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hero2 {
+  min-width: 1440px;
+  background-image: url(../images/44.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .hero__content {
   display: flex;
@@ -172,7 +180,7 @@ img {
 .hero__img-wrap {
 }
 .hero__img {
-  max-width: 750px;
+  /* max-width: 750px; */
 }
 
 /* ============section prod-categories=========== */
