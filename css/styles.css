@@ -207,6 +207,8 @@ img {
 
 .categories__img {
   width: 250px;
+  border: solid 6px #eca539;
+  border-radius: 50%;
 }
 .categories__list {
   display: flex;
@@ -232,7 +234,7 @@ img {
   display: flex;
   flex-direction: row-reverse;
   align-items: center;
-  justify-content: space-around;
+  justify-content: space-evenly;
 }
 .description__wrap:nth-of-type(2n) {
   flex-direction: row;
@@ -293,7 +295,7 @@ img {
 }
 .collection__img {
   width: 370px;
-
+  height: 460px;
   margin: 15px auto;
 }
 .collection__item-text {
