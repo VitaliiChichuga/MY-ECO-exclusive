@@ -96,11 +96,12 @@ img {
 /* ===============Header============== */
 
 .header {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  background-color: #ffd700;
 }
 .navigation {
   display: flex;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 .logo {
   width: 110px;
@@ -115,11 +116,11 @@ img {
 .navigation__item {
 }
 .navigation__item:not(:first-child) {
-  margin-left: 15px;
+  margin-left: 30px;
 }
 .navigation__link {
-  font-weight: 400;
-  font-size: 12px;
+  font-weight: 600;
+  font-size: 14px;
   line-height: 1.83;
   letter-spacing: 2px;
 }
@@ -152,10 +153,12 @@ img {
   margin-bottom: 10px;
 }
 .hero__text {
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: 600;
+  font-size: 18px;
   line-height: 1.62;
   margin-bottom: 45px;
+  color: #2465aa;
+  text-shadow: #fff 2px 2px 15px;
 }
 .hero__button {
   padding: 20px 40px;
@@ -328,6 +331,7 @@ img {
 }
 .footer__title {
   width: 350px;
+  text-align: center;
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 70px;
@@ -342,9 +346,9 @@ img {
   align-content: space-evenly;
   text-align: center;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.71;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
   color: var(--secondary-text-color);
 }
 .footer__link {
