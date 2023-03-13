@@ -13,10 +13,6 @@
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.2.0/modern-normalize.min.css" />
 
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
-
-
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
 
@@ -35,44 +31,78 @@
 
         <ul class="list navigation__menu">
           <li class="navigation__item ">
-            <a class="navigation__link  link" href="./">Головна</a>
+            <a class="navigation__link  link" href="./" target="_blank">Головна</a>
           </li>
           <li class="navigation__item ">
-            <a class="navigation__link  link" href="./shop-collection.html">Колекція</a>
+            <a class="navigation__link  link" href="./shop-collection.html" target="_blank">Колекція</a>
           </li>
           <li class="navigation__item ">
-            <a class="navigation__link  link" href="#contacts">Контакти</a>
+            <a class="navigation__link  link js-open-modal" data-modal="modalContactsShop" href="#contacts">Контакти</a>
           </li>
 
         </ul>
       </nav>
     </div>
 
+    <div class="modal" data-modal="modalContactsShop">
+      <!--   Svg иконка для закрытия окна  -->
+      <svg class="modal__cross js-modal-close" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+        <path
+          d="M23.954 21.03l-9.184-9.095 9.092-9.174-2.832-2.807-9.09 9.179-9.176-9.088-2.81 2.81 9.186 9.105-9.095 9.184 2.81 2.81 9.112-9.192 9.18 9.1z" />
+      </svg>
+      <p class="modal__title modal__title--tel"><span>Тел:</span> +380-508-888-888</p>
+      <p class="modal__title modal__title--mail"><span>Пошта:</span> Chichygav@gmail.com</p>
+      <div class="modal__link-wrapper">
+        <a class="modal__link link" href="https://t.me/Vitalii_Car_Kemping" aria-label="Telegram" target="_blank"
+          rel="noopener noreferrer">
+          <svg class="social-network__icon">
+            <use href="./images/svg/symbol-defs.svg#icon-telegram"></use>
+          </svg>
+        </a>
+        <a class="modal__link link"
+          href=" https://invite.viber.com/?g2=AQBZYV3DIKMtpk9knASDEiwTPnfH8YTfWFYAYc2BQjyuFfgmJ3e9vys6oK7It%2Fdy"
+          aria-label="Вайбер" target="_blank" rel="noopener noreferrer">
+          <svg class="social-network__icon">
+            <use href="./images/svg/symbol-defs.svg#icon-viber"></use>
+          </svg>
+        </a>
+      </div>
+    </div>
+    <div class="overlay js-overlay-modal"></div>
   </header>
 
   <main>
 
     <section class="shop-collection container section">
+
       <h1 class="shop-collection__title hero__title title">Колекція виробів</h1>
-      <ul class="shop-collection__menu collection__list">
-        <a class="hero__button-text button collection__item shop-collection__menu-link link" href="#1">Домашні тварини
-          <!-- <li class="list button  hero__button-text" type="button">Домашні тварини</li> -->
-        </a>
-        <a class="collection__item shop-collection__menu-link link" href="#2">
-          <li class="button  hero__button-text" type="button">Лісові тварини</li>
-        </a>
-        <a class="collection__item shop-collection__menu-link link" href="#3">
-          <li class="button  hero__button-text" type="button">Роботи</li>
-        </a>
-        <a class="collection__item shop-collection__menu-link link" href="#4">
-          <li class="button  hero__button-text" type="button">Екзотичні тварини</li>
-        </a>
-        <a class="collection__item shop-collection__menu-link link" href="#5">
-          <li class="button  hero__button-text" type="button">Рукоятки, щоденники</li>
-        </a>
+
+      <div>
+        <ul class="shop-collection__menu ">
+          <li class="button  hero__button-text" type="button">
+            <a class="shop-collection__menu-link link" href="#1">Домашні тварини</a>
+          </li>
+          <li class="button  hero__button-text" type="button">
+            <a class="shop-collection__menu-link link" href="#2">Лісові тварини</a>
+          </li>
+
+          <li class="button  hero__button-text" type="button">
+            <a class="shop-collection__menu-link link" href="#3">Роботи</a>
+          </li>
+          <li class="button  hero__button-text" type="button">
+            <a class="shop-collection__menu-link link" href="#4">Екзотичні тварини</a>
+          </li>
+          <li class="button  hero__button-text" type="button">
+            <a class="shop-collection__menu-link link" href="#5">Рукоятки, щоденники</a>
+          </li>
+          <li class="button  hero__button-text" type="button">
+            <a class="shop-collection__menu-link link" href="#5">Рукоятки, щоденники</a>
+          </li>
 
 
-      </ul>
+
+        </ul>
+      </div>
     </section>
     <section class="unidentified1 container section">
       <h2 class="collection__title categories__title">Product Categories</h2>
@@ -167,9 +197,8 @@
   <footer id="contacts" class="footer section">
     <div class="footer__content-wrap container">
       <span class="footer__border"></span>
-      <img class="footer__logo logo " src="./images/Pompeo.png" alt="Pompeo">
-      <p class="footer__title">I have always striven to fix beauty in wood, stone,
-        glass or pottery, that has been my creed.</p>
+      <img class="footer__logo logo " src="./images/logo2.png" alt="Pompeo">
+      <p class="footer__title">Різні дерев'яні фігурки. Досконалість доступна.</p>
 
       <ul class="footer__list list">
         <li class="footer__item">
@@ -180,14 +209,30 @@
             </svg>
           </a>
         </li>
-        <div class="footer__contacts">
-          <li class="footer__item">
-            <a class="link" href="tel:+380507777777" aria-label="Телефон">+380507777777</a>
-          </li>
-          <li class="footer__item">
-            <a class="link" href="mailto:Chichygav@gmail.com" aria-label="Почта">Chichygav@gmail.com</a>
-          </li>
-        </div>
+        <li class="footer__item footer__link-mail">
+
+          <a class="footer__link  link" href="mailto:Chichygav@gmail.com" aria-label="mail" target="_blank"
+            rel="noopener noreferrer">
+            <svg class="social-network__icon">
+              <use href="./images/svg/symbol-defs.svg#icon-mail"></use>
+            </svg>
+          </a>
+          <span class="footer__link-text footer__link-text--mail">Chichygav@gmail.com</span>
+
+
+        </li>
+        <li class="footer__item">
+          <a class="footer__link link" href="tel:+380507777777" aria-label="mobile" target="_blank"
+            rel="noopener noreferrer">
+            <svg class="social-network__icon">
+              <use href="./images/svg/symbol-defs.svg#icon-mobile"></use>
+            </svg>
+          </a>
+          <span class="footer__link-text footer__link-text--tel">
+            +380507777777
+          </span>
+        </li>
+
         <li class="footer__item">
           <a class="footer__link link"
             href=" https://invite.viber.com/?g2=AQBZYV3DIKMtpk9knASDEiwTPnfH8YTfWFYAYc2BQjyuFfgmJ3e9vys6oK7It%2Fdy"
@@ -198,9 +243,10 @@
           </a>
         </li>
       </ul>
+
     </div>
 
-    <p class="link link__copyright">
+    <p class="link link__copyright container">
       &copy;
       <a class="link" href="./">Chychuha.V.A</a>
     </p>
@@ -210,11 +256,8 @@
       <use href="./images/svg/symbol-defs.svg#icon-arrow-up2"></use>
     </svg>
   </a>
+  <script type="module" src="./js/modal-contacts.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-
   <script src="./js/back-to-top.js"></script>
   <script src="./js/app.js" type="module"></script>
   <script src="./js/gallery.js" type="module"></script>
