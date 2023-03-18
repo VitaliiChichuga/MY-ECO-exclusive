@@ -15,6 +15,8 @@
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css" />
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick.css" />
+  <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 
   <link rel="stylesheet" href="./css/styles.css" />
 </head>
@@ -36,12 +38,14 @@
           <li class="navigation__item ">
             <a class="navigation__link  link" href="./shop-collection.html" target="_blank">Колекція</a>
           </li>
+
           <li class="navigation__item ">
             <a class="navigation__link  link js-open-modal" data-modal="modalContactsShop" href="#contacts">Контакти</a>
           </li>
 
         </ul>
       </nav>
+      <span class="footer__border"></span>
     </div>
 
     <div class="modal" data-modal="modalContactsShop">
@@ -79,117 +83,243 @@
 
       <div>
         <ul class="shop-collection__menu ">
-          <li class="button  hero__button-text" type="button">
+          <li class="button  hero__button-text">
             <a class="shop-collection__menu-link link" href="#1">Домашні тварини</a>
           </li>
-          <li class="button  hero__button-text" type="button">
-            <a class="shop-collection__menu-link link" href="#2">Лісові тварини</a>
+          <li class="button  hero__button-text">
+            <a class="shop-collection__menu-link link" href="#2">Екзотичні тварини</a>
           </li>
-
-          <li class="button  hero__button-text" type="button">
+          <li class="button  hero__button-text">
             <a class="shop-collection__menu-link link" href="#3">Роботи</a>
           </li>
-          <li class="button  hero__button-text" type="button">
-            <a class="shop-collection__menu-link link" href="#4">Екзотичні тварини</a>
+          <li class="button  hero__button-text">
+            <a class="shop-collection__menu-link link" href="#4">Рукоятки, щоденники</a>
           </li>
-          <li class="button  hero__button-text" type="button">
-            <a class="shop-collection__menu-link link" href="#5">Рукоятки, щоденники</a>
-          </li>
-          <li class="button  hero__button-text" type="button">
-            <a class="shop-collection__menu-link link" href="#5">Рукоятки, щоденники</a>
-          </li>
-
-
-
         </ul>
       </div>
     </section>
-    <section class="unidentified1 container section">
-      <h2 class="collection__title categories__title">Product Categories</h2>
-      <ul id="1" class="collection__list">
-        <li id="first" class="collection__item list">
+    <section class="container section">
+      <h2 id="1" class="collection__title categories__title">Домашні тварини</h2>
+
+      <ul class="collection__list">
+        <li id="cat" class="collection__item list">
           <img class="shop-collection__img" src="./images/1.jpg" alt="Frame">
           <div class="collection__item-text">
-            <p>Decor Plate</p>
+            <p>Під замовлення</p>
             <span class="collection__item-price">$ 65.00 USD</span>
           </div>
+          <div class="collection__item-wrapper collection__item-wrapper1">
+            <img class="collection__item-image" src="./images/cats/IMG-bc396314398564951c42dbba9685566c-V.jpg" alt="">
+            <img class="collection__item-image" src="./images/cats/IMG-dbebb9da17b87e91e2a0d9d248f3e259-V.jpg" alt="">
+            <img class="collection__item-image" src="./images/cats/IMG_20230123_201827.jpg" alt="">
+            <img class="collection__item-image" src="./images/cats/IMG_20230123_203139_477.jpg" alt="">
+          </div>
+
         </li>
-        <li id="second" class="collection__item list">
+
+        <li id="duck" class="collection__item list">
+          <img class="shop-collection__img" src="./images/duck/IMG_20230304_144310_1.jpg" alt="Frame">
+          <div class="collection__item-text">
+            <p>Під замовлення</p>
+            <span class="collection__item-price">$ 65.00 USD</span>
+          </div>
+
+          <div class="collection__item-wrapper collection__item-wrapper2">
+            <img class="collection__item-image" src="./images/duck/1678383557911.png" alt="">
+            <img class="collection__item-image" src="./images/duck/IMG_20230304_144317_1.jpg" alt="">
+            <img class="collection__item-image" src="./images/duck/1678383557927.png" alt="">
+            <img class="collection__item-image" src="./images/duck/IMG_20230304_144325_1.jpg" alt="">
+
+          </div>
+        </li>
+        <li class="collection__item list">
+          <img class="shop-collection__img" src="./images/cats/1678383557958.jpg" alt="Frame">
+          <div class="collection__item-text">
+            <p>Під замовлення</p>
+            <span class="collection__item-price">$ 65.00 USD</span>
+          </div>
+          <div class="collection__item-wrapper collection__item-wrapper3">
+            <img class="collection__item-image" src="./images/cats/IMG_20230131_192916.jpg" alt="">
+            <img class="collection__item-image" src="./images/cats/IMG_20230202_171941.jpg" alt="">
+            <img class="collection__item-image" src="./images/cats/IMG_20230209_192213.jpg" alt="">
+            <img class="collection__item-image" src="./images/cats/IMG_20230209_192155_1.jpg" alt="">
+
+
+          </div>
+        </li>
+
+      </ul>
+
+    </section>
+    <section class="container section">
+      <h2 id="2" class="collection__title categories__title">Екзотичні тварини</h2>
+      <ul class="collection__list">
+        <li id="mammoth" class="collection__item list">
+          <img class="shop-collection__img" src="./images/mammoth/1-PhotoRoom.png-PhotoRoom.png" alt="Frame">
+          <div class="collection__item-text">
+            <p>Під замовлення</p>
+            <span class="collection__item-price">$ 65.00 USD</span>
+          </div>
+          <div class="collection__item-wrapper collection__item-wrapper1">
+            <img class="collection__item-image" src="./images/mammoth/75028.jpg" alt="">
+            <img class="collection__item-image" src="./images/mammoth/75029.jpg" alt="">
+            <img class="collection__item-image" src="./images/mammoth/IMG_20221204_180532.jpg" alt="">
+            <img class="collection__item-image" src="./images/mammoth/IMG_20221204_180541_1.jpg" alt="">
+
+
+          </div>
+        </li>
+        <li id="elefant" class="collection__item list">
           <img class="shop-collection__img" src="./images/elefant/изображение_viber_2022-11-06_21-36-25-268.jpg"
             alt="Frame">
           <div class="collection__item-text">
-            <p>Decor Plate</p>
+            <p>Під замовлення</p>
             <span class="collection__item-price">$ 65.00 USD</span>
           </div>
+          <div class="collection__item-wrapper collection__item-wrapper2">
+            <img class="collection__item-image" src="./images/elefant/1/74642.jpg" alt="">
+            <img class="collection__item-image" src="./images/elefant/1/74645.jpg" alt="">
+            <img class="collection__item-image" src="./images/elefant/1/74648.jpg" alt="">
+          </div>
         </li>
-        <li id="third" class="collection__item list">
-          <img class="shop-collection__img" src="./images/robot/изображение_viber_2023-03-07_13-20-55-960.jpg"
+        <li id="hummingbird" class="collection__item list">
+          <img class="shop-collection__img" src="./images/hummingbird/colibri.png" alt="Frame">
+          <div class="collection__item-text">
+            <p>Під замовлення</p>
+            <span class="collection__item-price">$ 65.00 USD</span>
+          </div>
+          <div class="collection__item-wrapper collection__item-wrapper3">
+            <img class="collection__item-image" src="./images/hummingbird/IMG_20230220_193641_1.jpg" alt="">
+            <img class="collection__item-image" src="./images/hummingbird/IMG_20230220_193654_1.jpg" alt="">
+            <img class="collection__item-image" src="./images/hummingbird/IMG_20230220_193706_1.jpg" alt="">
+            <img class="collection__item-image" src="./images/hummingbird/IMG_20230220_193723_1.jpg" alt="">
+          </div>
+        </li>
+        <li class="collection__item list">
+          <img class="shop-collection__img" src="./images/elefant/2/IMG_20221224_192114.jpg" alt="Frame">
+          <div class="collection__item-text">
+            <p>Під замовлення</p>
+            <span class="collection__item-price">$ 65.00 USD</span>
+          </div>
+          <div class="collection__item-wrapper collection__item-wrapper1">
+            <img class="collection__item-image" src="./images/elefant/2/IMG_20221224_192119_1.jpg" alt="">
+            <img class="collection__item-image" src="./images/elefant/2/IMG_20221224_192135.jpg" alt="">
+            <img class="collection__item-image" src="./images/elefant/2/IMG_20221224_192147_1.jpg" alt="">
+            <img class="collection__item-image" src="./images/elefant/2/IMG_20221224_192209_1.jpg" alt="">
+          </div>
+        </li>
+        <li id="owl" class="collection__item list">
+          <img class="shop-collection__img" src="./images/owl/5-PhotoRoom.png-PhotoRoom.png" alt="Frame">
+          <div class="collection__item-text">
+            <p>Під замовлення</p>
+            <span class="collection__item-price">$ 65.00 USD</span>
+          </div>
+          <div class="collection__item-wrapper collection__item-wrapper2">
+            <img class="collection__item-image" src="./images/owl/IMG_20221120_164910_1.jpg" alt="">
+            <img class="collection__item-image" src="./images/owl/IMG_20221120_164921.jpg" alt="">
+            <img class="collection__item-image" src="./images/owl/IMG_20221120_184803.jpg" alt="">
+            <img class="collection__item-image" src="./images/owl/IMG_20221120_184857.jpg" alt="">
+          </div>
+        </li>
+
+        <li class="collection__item list">
+          <img class="shop-collection__img" src="./images/elefant/3/75031.jpg" alt="Frame">
+          <div class="collection__item-text">
+            <p>Під замовлення</p>
+            <span class="collection__item-price">$ 65.00 USD</span>
+          </div>
+          <div class="collection__item-wrapper collection__item-wrapper3">
+            <img class="collection__item-image" src="./images/elefant/3/75032.jpg" alt="">
+            <img class="collection__item-image" src="./images/elefant/3/75033.jpg" alt="">
+
+          </div>
+        </li>
+        <li class="collection__item list">
+          <img class="shop-collection__img" src="./images/elefant/4/IMG_20221105_132717_1.jpg" alt="Frame">
+          <div class="collection__item-text">
+            <p>Під замовлення</p>
+            <span class="collection__item-price">$ 65.00 USD</span>
+          </div>
+          <div class="collection__item-wrapper collection__item-wrapper1">
+            <img class="collection__item-image" src="./images/elefant/4/IMG_20221105_132650.jpg" alt="">
+            <img class="collection__item-image" src="./images/elefant/4/IMG_20221105_132707_1.jpg" alt="">
+            <img class="collection__item-image" src="./images/elefant/4/IMG_20221105_132732_1.jpg" alt="">
+
+          </div>
+        </li>
+        <li class="collection__item list">
+          <img class="shop-collection__img" src="./images/elefant/5/изображение_viber_2022-11-03_20-40-07-972.jpg"
             alt="Frame">
           <div class="collection__item-text">
-            <p>Decor Plate</p>
+            <p>Під замовлення</p>
             <span class="collection__item-price">$ 65.00 USD</span>
           </div>
+          <div class="collection__item-wrapper collection__item-wrapper2">
+            <img class="collection__item-image" src="./images/elefant/5/изображение_viber_2022-11-03_20-40-08-096.jpg"
+              alt="">
+            <img class="collection__item-image" src="./images/elefant/5/изображение_viber_2022-11-03_20-40-07-786.jpg"
+              alt="">
+          </div>
         </li>
-
       </ul>
 
     </section>
-    <section class="unidentified2 container section">
-      <h2 class="collection__title categories__title">Product Categories</h2>
-      <ul id="2" class="collection__list">
-        <li id="fourth" class="collection__item list">
-          <img class="collection__img" src="./images/2.jpg" alt="Frame">
+    <section class="container section">
+      <h2 id="3" class="collection__title categories__title">Роботи</h2>
+      <ul class="collection__list">
+        <li id="robot" class="collection__item list">
+          <img class="shop-collection__img" src="./images/robot/1678383478151.jpg" alt="Frame">
           <div class="collection__item-text">
-            <p>Decor Plate</p>
+            <p>Під замовлення</p>
             <span class="collection__item-price">$ 65.00 USD</span>
           </div>
-        </li>
-        <li class="collection__item list">
-          <img class="collection__img" src="./images/2.jpg" alt="Frame">
-          <div class="collection__item-text">
-            <p>Decor Plate</p>
-            <span class="collection__item-price">$ 65.00 USD</span>
+          <div class="collection__item-wrapper collection__item-wrapper1">
+            <img class="collection__item-image" src="./images/robot/1678383478165.png" alt="">
+            <img class="collection__item-image" src="./images/robot/1678383478180.png" alt="">
+            <img class="collection__item-image" src="./images/robot/1678383478191.png" alt="">
           </div>
         </li>
-        <li class="collection__item list">
-          <img class="collection__img" src="./images/2.jpg" alt="Frame">
-          <div class="collection__item-text">
-            <p>Decor Plate</p>
-            <span class="collection__item-price">$ 65.00 USD</span>
-          </div>
-        </li>
+
 
       </ul>
 
+
     </section>
-    <section class="unidentified3 container section">
-      <h2 class="collection__title categories__title">Product Categories</h2>
-      <ul id="3" class="collection__list">
-        <li class="collection__item list">
-          <img class="collection__img" src="./images/3.jpg" alt="Frame">
+    <section class="container section">
+      <h2 id="4" class="collection__title categories__title">Рукоятки, щоденники та інше</h2>
+      <ul class="collection__list">
+        <li id="handle" class="collection__item list">
+          <img class="shop-collection__img" src="./images/handle/IMG_20230225_134912_1.jpg" alt="Frame">
           <div class="collection__item-text">
-            <p>Decor Plate</p>
+            <p>Під замовлення</p>
             <span class="collection__item-price">$ 65.00 USD</span>
           </div>
-        </li>
-        <li class="collection__item list">
-          <img class="collection__img" src="./images/3.jpg" alt="Frame">
-          <div class="collection__item-text">
-            <p>Decor Plate</p>
-            <span class="collection__item-price">$ 65.00 USD</span>
+          <div class="collection__item-wrapper collection__item-wrapper1">
+            <img class="collection__item-image" src="./images/handle/IMG_20230225_173112.jpg" alt="">
+            <img class="collection__item-image" src="./images/handle/IMG_20230225_173122.jpg" alt="">
+            <img class="collection__item-image" src="./images/handle/IMG_20230225_173230.jpg" alt="">
+            <img class="collection__item-image" src="./images/handle/IMG_20230225_173530.jpg" alt="">
           </div>
         </li>
-        <li class="collection__item list">
-          <img class="collection__img" src="./images/3.jpg" alt="Frame">
+        <li id="diary " class="collection__item list">
+          <img class="shop-collection__img" src="./images/diary/20191220_163816.jpg" alt="Frame">
           <div class="collection__item-text">
-            <p>Decor Plate</p>
+            <p>Під замовлення</p>
             <span class="collection__item-price">$ 65.00 USD</span>
           </div>
+          <div class="collection__item-wrapper collection__item-wrapper2">
+            <img class="collection__item-image" src="./images/diary/20191220_163816.jpg" alt="">
+            <img class="collection__item-image" src="./images/diary/20191220_163831.jpg" alt="">
+
+          </div>
         </li>
+
 
       </ul>
 
+
     </section>
+
 
 
 
@@ -251,16 +381,22 @@
       <a class="link" href="./">Chychuha.V.A</a>
     </p>
   </footer>
+
   <a class="" href="#">
     <svg class="back-to-top">
       <use href="./images/svg/symbol-defs.svg#icon-arrow-up2"></use>
     </svg>
   </a>
   <script type="module" src="./js/modal-contacts.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+  <script type="text/javascript" src="slick/slick.min.js"></script>
+  <script src="./js/slider.js"></script>
   <script src="./js/back-to-top.js"></script>
   <script src="./js/app.js" type="module"></script>
   <script src="./js/gallery.js" type="module"></script>
+
+
 
 </body>
 

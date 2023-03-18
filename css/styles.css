@@ -21,7 +21,7 @@
 
 html {
   box-sizing: border-box;
-  scroll-behavior: smooth;
+  /* scroll-behavior: smooth; */
 }
 
 *,
@@ -35,7 +35,7 @@ body {
   font-size: 14px;
   line-height: 1.71;
   color: var(--main-text-color);
-  background-color: var(--white-color);
+  background-color: #d9de1421;
 }
 
 h1,
@@ -97,7 +97,7 @@ img {
 
 .header {
   min-width: 1440px;
-  background-color: #ffd700;
+  /* background-color: #ffd700; */
 }
 .navigation {
   display: flex;
@@ -368,7 +368,9 @@ img {
 }
 .collection__text {
 }
+
 .collection__list {
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   margin-left: -20px;
@@ -388,11 +390,58 @@ img {
   transform: scale(1.03);
   transition: var(--transition);
 }
-.collection__img {
+.collection__image {
   width: 370px;
   height: 460px;
   margin: 15px auto;
 }
+/* =================== */
+.collection__item:hover > .collection__item-wrapper {
+  display: flex;
+  display: flex;
+  /* transition-delay: 0.7s; */
+}
+
+.collection__item-wrapper {
+  position: absolute;
+  z-index: 200;
+  align-items: center;
+  display: flex;
+  display: none;
+
+  align-content: center;
+  /* background-color: #4c2d2dc9; */
+  background-color: #fff3f3bd;
+
+  border-radius: 25px;
+  width: 1200px;
+}
+
+.collection__item-wrapper1 {
+  top: 45%;
+  left: 0;
+  /* transform: translate(-50%, -50%); */
+}
+.collection__item-wrapper2 {
+  top: 45%;
+  left: -102%;
+  /* transform: translate(-50%, -50%); */
+}
+.collection__item-wrapper3 {
+  top: 45%;
+  left: -203%;
+  /* transform: translate(-50%, -50%); */
+}
+
+.collection__item-image {
+  width: 230px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px;
+}
+/* ================== */
+
 .collection__item-text {
   font-size: 16px;
   padding-left: 15px;
@@ -500,32 +549,40 @@ img {
 
 .shop-collection__menu {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  margin: 0 20px;
+
+  margin-left: -20px;
+  margin-top: -20px;
+  margin-bottom: 50px;
+  padding: 0;
 }
 .shop-collection__menu-link {
   display: grid;
   width: 100%;
+  height: 100%;
+
   text-align: center;
   align-items: center;
 }
 .shop-collection__img {
   width: 370px;
   height: 553px;
+
   margin: 15px auto;
 }
 .button {
   width: 300px;
-  height: 50px;
-  display: grid;
-  /* align-items: center; */
-  /* padding: 3%; */
+  height: 55px;
+
+  flex-basis: calc(33% - 20px);
+  margin-top: 20px;
+  margin-left: 20px;
+
   border: none;
-  border-radius: 4px;
+  border-radius: 50px;
   background-color: var(--button-color);
   cursor: pointer;
-  text-align: center;
 }
-.button:not(:first-child) {
-  margin-left: 15px;
-}
+
+/* ================================= */
