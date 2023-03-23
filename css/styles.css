@@ -224,7 +224,7 @@ img {
 /* ================section hero=============  */
 .hero {
   min-width: 1440px;
-  background-image: url(../images/33.jpg);
+  background-image: url(../images/hero/flag.webp);
   background-repeat: no-repeat;
   background-position: center;
 }
