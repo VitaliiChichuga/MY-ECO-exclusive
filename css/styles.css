@@ -515,7 +515,9 @@ img {
 }
 
 .categories__item {
-  max-width: 500px;
+  max-width: 330px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -544,7 +546,7 @@ img {
 }
 @media screen and (min-width: 1024px) {
   .categories__item-title {
-    font-size: 29px;
+    font-size: 26px;
     margin-bottom: 25px;
   }
 }
@@ -562,9 +564,12 @@ img {
   flex-direction: row;
 }
 
-.description__content {
-  width: 400px;
+@media screen and (min-width: 480px) {
+  .description__content {
+    width: 400px;
+  }
 }
+
 .description__title {
   font-weight: 700;
   font-size: 20px;
