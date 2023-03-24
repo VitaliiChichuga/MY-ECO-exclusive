@@ -314,12 +314,16 @@ img {
 
 .hero__title {
   font-weight: 700;
-  font-size: 32px;
+  font-size: 28px;
   line-height: 1.21;
   margin-bottom: 20px;
   text-align: end;
 }
-
+@media screen and (min-width: 768px) {
+  .hero__title {
+    font-size: 32px;
+  }
+}
 @media screen and (min-width: 1024px) {
   .hero__title {
     font-size: 48px;
@@ -342,8 +346,8 @@ img {
 
 @media screen and (min-width: 480px) {
   .hero__text {
-    font-size: 17px;
-    width: 406px;
+    font-size: 19px;
+    width: 443px;
   }
 }
 @media screen and (min-width: 1024px) {
