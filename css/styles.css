@@ -105,14 +105,14 @@ img {
 
 .title {
   font-weight: 700;
-  font-size: 32px;
+  font-size: 29px;
   line-height: 1.14;
   color: var(--title-color);
 }
 
 @media screen and (min-width: 768px) {
   .title {
-    font-size: 36px;
+    font-size: 32px;
   }
 }
 @media screen and (min-width: 1024px) {
@@ -429,7 +429,7 @@ img {
 
 .categories__title {
   font-weight: 700;
-  font-size: 12px;
+  font-size: 11px;
   line-height: 1.71;
   letter-spacing: 2px;
   text-align: left;
@@ -443,7 +443,7 @@ img {
     margin-top: 50px;
   }
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
   .categories__title {
     font-size: 14px;
     text-align: center;
