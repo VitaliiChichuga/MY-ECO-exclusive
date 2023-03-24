@@ -564,9 +564,21 @@ img {
   flex-direction: row;
 }
 
+@media screen and (max-width: 480px) {
+  .description__content {
+    max-width: 200px;
+  }
+}
+
 @media screen and (min-width: 480px) {
   .description__content {
-    width: 400px;
+    max-width: 343px;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .description__content {
+    max-width: 500px;
   }
 }
 
