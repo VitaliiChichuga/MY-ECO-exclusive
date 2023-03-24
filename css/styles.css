@@ -84,9 +84,9 @@ img {
     width: 768px;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .container {
-    width: 1440px;
+    width: 1280px;
     padding-left: 100px;
     padding-right: 100px;
   }
@@ -96,11 +96,11 @@ img {
   padding-top: 60px;
 }
 
-@media screen and (min-width: 1280px) {
+/* @media screen and (min-width: 1280px) {
   .section {
     padding-top: 120px;
   }
-}
+} */
 /* ================================= */
 
 .title {
@@ -140,9 +140,9 @@ img {
     width: 768px;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .header {
-    width: 1440px;
+    width: 1280px;
   }
 }
 
@@ -179,7 +179,7 @@ img {
   margin-right: 15px;
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .navigation__menu {
     margin-right: 100px;
   }
@@ -437,9 +437,9 @@ img {
     max-width: 375px;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .hero__img {
-    max-width: 710px;
+    max-width: 600px;
   }
 }
 
@@ -551,7 +551,7 @@ img {
     max-width: 270px;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .categories__item {
     max-width: 500px;
   }
@@ -597,7 +597,7 @@ img {
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .description__content {
     max-width: 500px;
   }
@@ -634,6 +634,8 @@ img {
 }
 .description__img {
   min-width: 180px;
+  margin-left: auto;
+  margin-right: auto;
 }
 @media screen and (min-width: 768px) {
   .description__content-img {
@@ -645,9 +647,9 @@ img {
     width: 250px;
   }
 }
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .description__content-img {
-    width: 350px;
+    width: 550px;
   }
 }
 
@@ -920,11 +922,11 @@ img {
   }
 }
 
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 1280px) {
   .shop-collection__item {
     margin-top: 30px;
     flex-basis: calc((100% - 30px) / 3);
-    max-width: 383px;
+    max-width: 315px;
     margin-left: 30px;
   }
 }
