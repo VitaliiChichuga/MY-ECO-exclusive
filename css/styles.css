@@ -1000,6 +1000,16 @@ img {
   padding-right: 5px;
   margin: 15px auto;
 }
+@media screen and (max-width: 1279.98px) {
+  .shop-collection__item:active .shop-collection__img {
+    transform: scale(1.5);
+    position: absolute;
+    width: 40%;
+    top: 75%;
+    left: 31%;
+  }
+}
+
 .button {
   width: 230px;
   height: 40px;
