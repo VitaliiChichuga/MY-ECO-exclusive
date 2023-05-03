@@ -29,12 +29,15 @@
   <meta property="og:description" content="Купити незвичайний подарунок ручної роботи">
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.2.0/modern-normalize.min.css" />
-
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
   <link rel="stylesheet" href="./css/styles.css" />
+
 </head>
 
 <body>
@@ -119,9 +122,9 @@
     </section>
     <section class="container section">
       <h2 id="1" class="collection__title categories__title">Домашні тварини</h2>
-      <ul class="shop-collection__list">
+      <ul class="shop-collection__list shop-coll">
         <li id="cat" class="shop-collection__item list">
-          <img class="shop-collection__img" src="./images/cats/1.webp" alt="Кіт">
+          <img class="shop-collection__img cat1" src="./images/cats/1.webp" alt="Кіт">
 
           <div class="collection__item-title">
             <p>Кішечка "БАГІРА"</p>
@@ -133,19 +136,19 @@
             <span class="collection__item-price">1500 UAH</span>
             <span class="flare"></span>
           </div>
-          <div class="collection__item-wrapper collection__item-wrapper1 collection__item-wrapper--active1">
+          <!-- <div class="collection__item-wrapper collection__item-wrapper1 collection__item-wrapper--active1">
             <img class="collection__item-image" src="./images/cats/IMG-bc396314398564951c42dbba9685566c-V.webp"
               alt="Кіт">
             <img class="collection__item-image" src="./images/cats/IMG-dbebb9da17b87e91e2a0d9d248f3e259-V.webp"
               alt="Кіт">
             <img class="collection__item-image" src="./images/cats/IMG_20230123_201827.webp" alt="Кіт">
             <img class="collection__item-image" src="./images/cats/IMG_20230123_203139_477.webp" alt="Кіт">
-          </div>
+          </div> -->
 
         </li>
 
         <li id="duck" class="shop-collection__item list">
-          <img class="shop-collection__img" src="./images/duck/IMG_20230304_144310_1.webp" alt="Селезень">
+          <img class="shop-collection__img duck" src="./images/duck/IMG_20230304_144310_1.webp" alt="Селезень">
           <div class="collection__item-title">
             <p>Каченя "КРЯК"</p>
             <p>Матеріаль: Липа</p>
@@ -156,13 +159,13 @@
             <span class="collection__item-price">1200 UAH</span><span class="flare"></span>
           </div>
 
-          <div class="collection__item-wrapper collection__item-wrapper2">
+          <!-- <div class="collection__item-wrapper collection__item-wrapper2">
             <img class="collection__item-image" src="./images/duck/1678383557911.webp" alt="Селезень">
             <img class="collection__item-image" src="./images/duck/IMG_20230304_144317_1.webp" alt="Селезень">
             <img class="collection__item-image" src="./images/duck/1678383557927.webp" alt="Селезень">
             <img class="collection__item-image" src="./images/duck/IMG_20230304_144325_1.webp" alt="Селезень">
 
-          </div>
+          </div> -->
         </li>
         <li class="shop-collection__item list">
           <img class="shop-collection__img" src="./images/cats/1678383557958.webp" alt="Кіт">
@@ -191,7 +194,7 @@
       <h2 id="2" class="collection__title categories__title">Екзотичні тварини</h2>
       <ul class="shop-collection__list">
         <li id="mammoth" class="shop-collection__item list">
-          <img class="shop-collection__img" src="./images/mammoth/1-PhotoRoom.png-PhotoRoom.webp" alt="Мамонтеня">
+          <img class="shop-collection__img " src="./images/mammoth/1-PhotoRoom.png-PhotoRoom.webp" alt="Мамонтеня">
           <div class="collection__item-title">
             <p>Мамонтеня на крижині "ДІМА"</p>
             <p>Матеріаль: Липа</p>
@@ -491,6 +494,7 @@
 
     </div>
 
+
     <p class="link link__copyright container">
       &copy;
       <a class="link" href="./">Chychuha.V.A</a>
@@ -498,14 +502,30 @@
   </footer>
 
   <a class="" href="#">
+
     <svg class="back-to-top">
       <use href="./images/svg/symbol-defs.svg#icon-arrow-up2"></use>
     </svg>
   </a>
+
+
+
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+  <!-- <script src="./js/index.js"></script> -->
+  <script src="./js/app.js" type="module"></script>
+  <script src="./js/gallery.js" type="module"></script>
+
   <script src="./js/back-to-top.js"></script>
   <script type="module" src="./js/modal-contacts.js"></script>
   <script src="./js/not-download.js"></script>
+
+
 
 
 

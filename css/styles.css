@@ -1126,3 +1126,22 @@ img {
 }
 
 /* ================================= */
+.but {
+  display: block;
+  width: 100px;
+  height: 100px;
+  margin: 50px;
+  text-align: center;
+}
+.your-class {
+  display: none;
+  width: 600px;
+  height: auto;
+  margin: 50px;
+  text-align: center;
+}
+.img_style {
+  display: block;
+  width: 300px;
+  height: auto;
+}
