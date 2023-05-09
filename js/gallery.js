@@ -1,15 +1,23 @@
-import { bagira, crack } from './app.js';
+import { data } from './data.js';
 
 const solutionsPageWork = document.querySelector('body');
 
-const getDataName = document.querySelectorAll('[data-name]');
-// const nameArray = [];
 
 solutionsPageWork.addEventListener('click', e => {
-  if (e.target.dataset.name === 'bagira') {
-    Fancybox.show(bagira, 'src');
-  }
-  if (e.target.dataset.name === 'crack') {
-    Fancybox.show(crack, 'src');
-  }
+    data.forEach(element => {
+        if (e.target.className.includes(element.name)) {
+            let arr = generator(element.imgCollectionPath);
+
+            Fancybox.show(arr, 'src');
+        }
+    });
 });
+
+function generator(arr) {
+    let newArr = [];
+    arr.forEach(el => {
+        newArr.push({ src: el });
+    });
+
+    return newArr;
+}
